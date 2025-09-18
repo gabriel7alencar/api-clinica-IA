@@ -1,8 +1,8 @@
 # API Clínica IA
 
-**Uma API para gerenciamento de uma clínica utilizando Inteligência Artificial.**
+**Uma API para gerenciamento de uma clínica **
 
-Este projeto foi desenvolvido para fornecer uma solução moderna de gerenciamento de clínicas médicas, integrando tecnologias de backend e inteligência artificial para otimizar o atendimento e o processo de diagnóstico de pacientes.
+Este projeto esta sendo um aprendizado, e é um exemplo de clinica medica;
 
 ## Tecnologias Utilizadas
 
