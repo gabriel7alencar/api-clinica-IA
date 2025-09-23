@@ -1,4 +1,6 @@
-package med.voll.api.medico;
+package med.voll.api.consulta;
+
+import org.hibernate.validator.constraints.br.CPF;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
@@ -6,20 +8,23 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import med.voll.api.endereco.DadosEndereco;
 
-public record DadosCadastroMedico(
+
+public record DadosAgendamentoConsulta (
         @NotNull
-        Long id,
+        int id,
         @NotBlank
         String nome,
-        @NotBlank
+        @CPF
+        int cpf,
         @Email
         String email,
         @NotBlank
         String telefone,
-        @NotBlank
-        String crm,
+        @NotNull 
+        @Valid 
+        DadosEndereco endereco,
         @NotNull
-        Especialidade especialidade,
-        @NotNull @Valid 
-        DadosEndereco endereco) {
+        String especialidade
+) {  
+
 }
